@@ -1,42 +1,48 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBolt, faIndustry, faSun } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLeaf,
+  faCalendar,
+  faBriefcase,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Stats = () => (
   <div className="stats shadow bg-base-200 w-full">
     <div className="stat">
       <div className="stat-figure text-primary">
         <FontAwesomeIcon
-          icon={faBolt}
+          icon={faCalendar}
           className="inline-block w-8 h-8 stroke-current"
         />
       </div>
-      <div className="stat-title">Downloads</div>
-      <div className="stat-value">31K</div>
-      <div className="stat-desc">Jan 1st - Feb 1st</div>
+      <div className="stat-title">Scheduled jobs</div>
+      <div className="stat-value">43</div>
+      <div className="stat-desc">Jan 1st - Feb 5st</div>
     </div>
 
     <div className="stat">
       <div className="stat-figure text-primary">
         <FontAwesomeIcon
-          icon={faSun}
+          icon={faLeaf}
           className="inline-block w-8 h-8 stroke-current"
         />
       </div>
-      <div className="stat-title">New Users</div>
-      <div className="stat-value">4,200</div>
+      <div className="stat-title">Co2 Emissions saved</div>
+      <div className="stat-value">
+        3982 m<sup>2</sup>
+      </div>
       <div className="stat-desc">↗︎ 400 (22%)</div>
     </div>
 
     <div className="stat">
       <div className="stat-figure text-primary">
         <FontAwesomeIcon
-          icon={faIndustry}
+          icon={faBriefcase}
           className="inline-block w-8 h-8 stroke-current"
         />
       </div>
-      <div className="stat-title">New Registers</div>
-      <div className="stat-value">1,200</div>
-      <div className="stat-desc">↘︎ 90 (14%)</div>
+      <div className="stat-title">Upcoming jobs</div>
+      <div className="stat-value">23</div>
+      <div className="stat-desc">in the next 2 days</div>
     </div>
   </div>
 );
