@@ -43,6 +43,7 @@ function MyApp({ Component, pageProps }) {
           </ul>
         </div>
       </header>
+
       <Component {...pageProps} />
     </div>
   );
