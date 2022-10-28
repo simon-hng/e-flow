@@ -7,7 +7,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <div data-theme="platinion">
-      <header className="navbar bg-base-100">
+      <header className="navbar bg-base-100 mb-8">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost normal-case text-xl">
             eFlow

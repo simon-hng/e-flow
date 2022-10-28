@@ -42,7 +42,7 @@ const Stats = () => (
       </div>
       <div className="stat-title">Upcoming jobs</div>
       <div className="stat-value">23</div>
-      <div className="stat-desc">in the next 2 days</div>
+      <div className="stat-desc">in the next week</div>
     </div>
   </div>
 );

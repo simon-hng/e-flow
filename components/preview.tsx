@@ -6,6 +6,9 @@ import {
   Tooltip,
   XAxis,
   YAxis,
+  ReferenceLine,
+  ComposedChart,
+  Label,
 } from "recharts";
 
 const data = [
@@ -53,15 +56,16 @@ const data = [
   },
 ];
 
+
 const Preview = () => {
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <AreaChart
+      <ComposedChart
         width={500}
         height={400}
         data={data}
         margin={{
-          top: 10,
+          top: 20,
           right: 30,
           left: 0,
           bottom: 0,
@@ -92,7 +96,9 @@ const Preview = () => {
           stroke="#ffc658"
           fill="#ffc658"
         />
-      </AreaChart>
+      <ReferenceLine x="Page B" stroke="white" strokeWidth={3} label=<Label value="Start Time" position="top" fill="#e5e7eb"/> />
+      <ReferenceLine x="Page F" stroke="white" strokeWidth={3} label=<Label value="End Time" position="top" fill="#e5e7eb"/> />
+      </ComposedChart>
     </ResponsiveContainer>
   );
 };
