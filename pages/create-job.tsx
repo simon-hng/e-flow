@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import DatePicker from "react-datepicker";
 import Preview from "../components/preview";
 
@@ -13,14 +15,19 @@ function CreateJob() {
         <Preview />
       </div>
 
-      <div className="grid grid-cols-2 gap-4 lg:w-2/4">
-        <div className="dropdown col-span-2 ">
+      <div className="grid grid-cols-2 gap-4 w-full lg:w-2/4">
+        <div className="dropdown col-span-2">
           <label tabIndex={0} className="btn m-1 w-full">
             {!type ? "Select job type" : type}
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className="inline-block pl-2 h-4"
+            />
           </label>
+
           <ul
             tabIndex={0}
-            className="bg-base-200 dropdown-content w-full menu p-2 shadow bg-base-100 rounded-box w-52"
+            className="bg-base-200 dropdown-content menu p-2 rounded-box w-full"
           >
             {[
               "Generate monthly report",
