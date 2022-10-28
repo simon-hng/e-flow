@@ -33,7 +33,8 @@ function MyApp({ Component, pageProps }) {
   </div>
 </div>
       <header className="p-4">
-        <FontAwesomeIcon icon={faBolt} className="pl-2" />
+        e-Flow
+        <FontAwesomeIcon icon={faBolt} className="inline-block w-6 pl-2" />
       </header>
       <Component {...pageProps} />
     </>
