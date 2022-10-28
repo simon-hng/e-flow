@@ -1,14 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBolt } from "@fortawesome/free-solid-svg-icons";
-
-function Overview({ Component, pageProps }) {
+function Overview() {
   return (
     <>
-      <header className="p-4">
-        e-Flow
-        <FontAwesomeIcon icon={faBolt} className="pl-2" />
-      </header>
-      <Component {...pageProps} />
+      <h1>Overview</h1>
     </>
   );
 }
