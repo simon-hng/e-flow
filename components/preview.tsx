@@ -79,22 +79,22 @@ const Preview = () => {
           type="monotone"
           dataKey="uv"
           stackId="1"
-          stroke="#8884d8"
-          fill="#8884d8"
+          stroke="#DC2626"
+          fill="#DC2626"
         />
         <Area
           type="monotone"
           dataKey="pv"
           stackId="1"
-          stroke="#82ca9d"
-          fill="#82ca9d"
+          stroke="#facc15"
+          fill="#facc15"
         />
         <Area
           type="monotone"
           dataKey="amt"
           stackId="1"
-          stroke="#ffc658"
-          fill="#ffc658"
+          stroke="#65a30d"
+          fill="#65a30d"
         />
       <ReferenceLine x="Page B" stroke="white" strokeWidth={3} label=<Label value="Start Time" position="top" fill="#e5e7eb"/> />
       <ReferenceLine x="Page F" stroke="white" strokeWidth={3} label=<Label value="End Time" position="top" fill="#e5e7eb"/> />
