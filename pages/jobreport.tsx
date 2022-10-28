@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt } from "@fortawesome/free-solid-svg-icons";
 
-function Schedule() {
+function JobReport() {
   return (
     <>
-    Schedule
+    JobReport
     </>
   );
 }
 
-export default Schedule;
+export default JobReport;
