@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Jobs from "../components/jobs";
 import Stats from "../components/stats";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 
       <main className="min-h-screen px-4">
         <Stats />
+        <Jobs />
       </main>
     </div>
   );
