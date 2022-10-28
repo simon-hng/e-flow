@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const Stats = () => (
   <div className="stats shadow bg-base-200 w-full">
@@ -77,6 +78,9 @@ export default function Home() {
       </Head>
 
       <main className="min-h-screen px-4">
+        <Link href="/create-job" className="btn w-full mb-4">
+          Create new job
+        </Link>
         <Stats />
       </main>
     </div>

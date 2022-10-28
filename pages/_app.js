@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 import "react-datepicker/dist/react-datepicker.css";
 import "../styles/globals.css";
 
@@ -8,10 +9,10 @@ function MyApp({ Component, pageProps }) {
     <div data-theme="platinion">
       <header className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">
+          <Link href="/" className="btn btn-ghost normal-case text-xl">
             eFlow
             <FontAwesomeIcon icon={faBolt} className="inline-block w-6 pl-2" />
-          </a>
+          </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
