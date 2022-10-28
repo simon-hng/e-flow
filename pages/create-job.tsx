@@ -8,6 +8,7 @@ function CreateJob() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const [type, setType] = useState<string>();
+  const [repeat, setRepeat] = useState<string>("no repeat");
 
   return (
     <div className="flex flex-col px-4 lg:flex-row-reverse gap-4">
@@ -15,10 +16,10 @@ function CreateJob() {
         <Preview />
       </div>
 
-      <div className="grid grid-cols-2 gap-4 w-full lg:w-2/4">
+      <div className="grid grid-cols-2 gap-2 w-full lg:w-2/4">
         <div className="dropdown col-span-2">
           <label tabIndex={0} className="btn m-1 w-full">
-            {!type ? "Select job type" : type}
+            {!type ? "Select job" : type}
             <FontAwesomeIcon
               icon={faChevronDown}
               className="inline-block pl-2 h-4"
@@ -44,7 +45,7 @@ function CreateJob() {
 
         <div className="col-span-1">
           <label htmlFor="" className="label">
-            Start
+            Earliest starting time
           </label>
           <DatePicker
             className="input input-bordered w-full"
@@ -60,7 +61,7 @@ function CreateJob() {
 
         <div className="col-span-1">
           <label htmlFor="" className="label">
-            End
+            Execute until
           </label>
           <DatePicker
             className="input input-bordered w-full"
@@ -75,7 +76,36 @@ function CreateJob() {
           />
         </div>
 
-        <button className="btn col-span-2">create</button>
+        <div className="dropdown col-span-2">
+          <label tabIndex={0} className="btn m-1 w-full">
+            {repeat}
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className="inline-block pl-2 h-4"
+            />
+          </label>
+
+          <ul
+            tabIndex={0}
+            className="bg-base-200 dropdown-content menu p-2 rounded-box w-full"
+          >
+            {[
+              "no repeat",
+              "repeat daily",
+              "repeat weekly",
+              "repeat monthy",
+              "repeat yearly",
+            ].map((repeat) => (
+              <li key={repeat}>
+                <a onClick={() => setRepeat(repeat)}>{repeat}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <button className="btn col-span-2 bg-primary text-neutral hover:bg-primary">
+          create
+        </button>
       </div>
     </div>
   );
