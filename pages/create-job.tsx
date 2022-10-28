@@ -1,5 +1,6 @@
 import { useState } from "react";
 import DatePicker from "react-datepicker";
+import Preview from "../components/preview";
 
 function CreateJob() {
   const [startDate, setStartDate] = useState(new Date());
@@ -8,6 +9,9 @@ function CreateJob() {
 
   return (
     <div className="px-4 grid grid-cols-2 gap-4">
+      <div className="w-full col-span-2 h-64">
+        <Preview />
+      </div>
       <div className="dropdown col-span-2 ">
         <label tabIndex={0} className="btn m-1 w-full">
           {!type ? "Select job type" : type}
@@ -61,8 +65,6 @@ function CreateJob() {
           dateFormat="d/MM/yyyy hh:mmaa"
         />
       </div>
-
-      <button className="btn mt-10 col-span-2">preview</button>
 
       <button className="btn col-span-2">create</button>
     </div>
