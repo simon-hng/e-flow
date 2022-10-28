@@ -14,18 +14,12 @@ function MyApp({ Component, pageProps }) {
             <FontAwesomeIcon icon={faBolt} className="inline-block h-4 pl-2" />
           </Link>
         </div>
-        <div className="flex-none">
-        <Link href="/overview" className="btn rounded-full">
-            Overview{" "}
-          </Link>
-          <Link href="/runjobs" className="btn rounded-full">
-            Run Job{" "}
-          </Link>
-          <Link href="/schedulejobs" className="btn rounded-full">
-            Schedule Job{" "}
-          </Link>
+        <div className="space-x-4">
+          <Link href="/overview">Overview </Link>
+          <Link href="/runjobs">Run Job </Link>
+          <Link href="/schedulejobs">Schedule Job </Link>
           <Link href="/create-job" className="btn rounded-full">
-            new job{" "}
+            new job
             <FontAwesomeIcon icon={faPlus} className="inline-block h-4 ml-2" />
           </Link>
         </div>
