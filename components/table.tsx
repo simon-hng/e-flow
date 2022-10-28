@@ -1,13 +1,4 @@
 import React from "react";
-import {
-  Area,
-  AreaChart,
-  CartesianGrid,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
 
 const Table = () => {
   return (
@@ -24,7 +15,7 @@ const Table = () => {
         <input type="checkbox" id="my-modal-6" className="modal-toggle" />
         <div className="modal modal-bottom sm:modal-middle">
           <div className="modal-box">
-            <h3 className="font-bold text-lg">"Job Name"</h3>
+            <h3 className="font-bold text-lg">Job Name</h3>
             <p> Job report info</p>
             <div className="modal-action">
               <label htmlFor="my-modal-6" className="btn">
@@ -37,7 +28,7 @@ const Table = () => {
           <tr>
             <td>Cy Ganderton</td>
             <label htmlFor="my-modal-6" className="btn modal-button">
-              "Job 1 name"
+              Job 1 name
             </label>
             <td>
               <progress
@@ -51,7 +42,7 @@ const Table = () => {
           <tr className="hover">
             <td>Hart Hagerty</td>
             <label htmlFor="my-modal-6" className="btn modal-button">
-              "Job 2 name"
+              Job 2 name
             </label>
             <td>
               <progress
@@ -65,7 +56,7 @@ const Table = () => {
           <tr>
             <td>Brice Swyre</td>
             <label htmlFor="my-modal-6" className="btn modal-button">
-              "Job 3 name"
+              Job 3 name
             </label>
             <td>
               <progress
