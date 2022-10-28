@@ -12,6 +12,14 @@ export default function Home() {
       </Head>
 
       <main className="min-h-screen px-4">
+        <div className="hero">
+          <div className="hero-content text-center">
+            <div className="max-w-lg py-8">
+              <h1 className="text-5xl font-bold">Perfect timing</h1>
+              <p className="text-3xl py-2">Efficiently schedule your jobs anywhere, anytime</p>
+            </div>
+          </div>
+        </div>
         <Stats />
         <Jobs />
       </main>
