@@ -3,6 +3,7 @@ import DatePicker from "react-datepicker";
 
 function CreateJob() {
   const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
   const [type, setType] = useState<string>();
 
   return (
@@ -15,7 +16,12 @@ function CreateJob() {
           tabIndex={0}
           className="bg-base-200 dropdown-content w-full menu p-2 shadow bg-base-100 rounded-box w-52"
         >
-          {["Job 1", "Job 2"].map((job) => (
+          {[
+            "Generate monthly report",
+            "Generate yearly report",
+            "Archive data",
+            "Train ML model purple unicorn",
+          ].map((job) => (
             <li key={job}>
               <a onClick={() => setType(job)}>{job}</a>
             </li>
@@ -32,6 +38,9 @@ function CreateJob() {
           showTimeSelect
           selected={startDate}
           onChange={(date) => setStartDate(date)}
+          selectsStart
+          startDate={startDate}
+          endDate={endDate}
           dateFormat="d/MM/yyyy hh:mmaa"
         />
       </div>
@@ -43,8 +52,12 @@ function CreateJob() {
         <DatePicker
           className="input input-bordered w-full"
           showTimeSelect
-          selected={startDate}
-          onChange={(date) => setStartDate(date)}
+          selected={endDate}
+          onChange={(date) => setEndDate(date)}
+          selectsEnd
+          startDate={startDate}
+          endDate={endDate}
+          minDate={startDate}
           dateFormat="d/MM/yyyy hh:mmaa"
         />
       </div>
