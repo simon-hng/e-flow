@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
+import DatePicker from "react-datepicker";
 import {
   Area,
   AreaChart,
@@ -56,6 +58,8 @@ const data = [
 ];
 
 export default function Home() {
+  const [startDate, setStartDate] = useState(new Date());
+
   return (
     <div className={styles.container}>
       <Head>
@@ -79,6 +83,11 @@ export default function Home() {
             />
           </AreaChart>
         </div>
+        <DatePicker
+          showTimeSelect
+          selected={startDate}
+          onChange={(date: Date) => setStartDate(date)}
+        />
       </main>
 
       <footer className={styles.footer}>
