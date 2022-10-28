@@ -9,7 +9,7 @@ function CreateJob() {
 
   return (
     <div className="flex flex-col px-4 lg:flex-row-reverse gap-4">
-      <div className="w-full col-span-2 h-64 lg:w-2/4">
+      <div className="w-full col-span-2 h-80 lg:w-2/4">
         <Preview />
       </div>
 
