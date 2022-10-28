@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <header className="p-4">
         e-Flow
-        <FontAwesomeIcon icon={faBolt} className="pl-2" />
+        <FontAwesomeIcon icon={faBolt} className="inline-block w-6 pl-2" />
       </header>
       <Component {...pageProps} />
     </>
