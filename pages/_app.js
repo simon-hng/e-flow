@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faPlus } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import Footer from "../components/footer";
 import "react-datepicker/dist/react-datepicker.css";
 import "../styles/globals.css";
 
@@ -24,6 +25,8 @@ function MyApp({ Component, pageProps }) {
       </header>
 
       <Component {...pageProps} />
+
+      <Footer />
     </div>
   );
 }

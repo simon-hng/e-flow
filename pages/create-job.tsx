@@ -23,7 +23,7 @@ function CreateJob() {
   }, [startDate, endDate]);
 
   return (
-    <div className="px-4">
+    <div className="px-4 min-h-screen">
       <h1 className="text-2xl font-bold pb-4">Create job</h1>
 
       <div className="flex flex-col lg:flex-row-reverse gap-4">
