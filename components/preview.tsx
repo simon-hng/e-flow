@@ -36,7 +36,7 @@ const Preview = ({data}) => (
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="time" tickFormatter={(elem) => new Date(elem).toDateString()} interval='preserveStartEnd'/>
+          <XAxis dataKey="time" tickFormatter={(elem) => new Date(elem).toDateString()} hide={true}/>
           <YAxis />
           <Tooltip labelFormatter={(value) => new Date(value as number).toDateString()} 
             formatter={value => `${value} kW`}
