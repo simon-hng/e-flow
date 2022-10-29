@@ -2,12 +2,12 @@ import React from "react";
 
 const jobs = [
   {
-    name: "Archive data",
+    name: "Generate monthly report",
     start: 1666980834723,
     end: 1666980834723,
   },
   {
-    name: "Generate monthly report",
+    name: "Archive data",
     start: 1666980834723,
     end: 1666980834723,
   },
@@ -39,7 +39,7 @@ const Table = () => {
       <table className="table w-full">
         <thead>
           <tr>
-            <th>User</th>
+            <th>Job name</th>
             <th>Status</th>
             <th>Date Completed</th>
             <th>Details</th>

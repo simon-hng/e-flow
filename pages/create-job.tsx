@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import DatePicker from "react-datepicker";
 import Preview from "../components/preview";
+import Link from "next/link";
 
 function CreateJob() {
   const [startDate, setStartDate] = useState(new Date());
@@ -118,9 +119,12 @@ function CreateJob() {
             </ul>
           </div>
 
-          <button className="btn col-span-2 bg-primary text-neutral hover:bg-primary">
+          <Link
+            href="scheduled-jobs"
+            className="btn col-span-2 bg-primary text-neutral hover:bg-primary"
+          >
             create
-          </button>
+          </Link>
         </div>
       </div>
     </div>

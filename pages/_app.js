@@ -15,8 +15,10 @@ function MyApp({ Component, pageProps }) {
             <FontAwesomeIcon icon={faBolt} className="inline-block h-4 pl-2" />
           </Link>
         </div>
+
         <div className="space-x-4">
           <Link href="/jobreport">Job Report</Link>
+          <Link href="/scheduled-jobs">Scheduled jobs</Link>
           <Link href="/create-job" className="btn rounded-full">
             new job
             <FontAwesomeIcon icon={faPlus} className="inline-block h-4 ml-2" />
