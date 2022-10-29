@@ -16,7 +16,9 @@ export default function Home() {
           <div className="hero-content text-center">
             <div className="max-w-lg py-8">
               <h1 className="text-5xl font-bold">Perfect timing</h1>
-              <p className="text-3xl py-2">Sustainably schedule your jobs anywhere, anytime</p>
+              <p className="text-3xl py-2">
+                Sustainably schedule your jobs anywhere, anytime
+              </p>
             </div>
           </div>
         </div>

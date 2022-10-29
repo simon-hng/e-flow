@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
         <div className="space-x-4">
           <Link href="/job-report">Reports</Link>
           <Link href="/scheduled-jobs">Scheduled</Link>
+          <Link href="/whyus">Why Us?</Link>
           <Link href="/create-job" className="btn rounded-full">
             new job
             <FontAwesomeIcon icon={faPlus} className="inline-block h-4 ml-2" />
