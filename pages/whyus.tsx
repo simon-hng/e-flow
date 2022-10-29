@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Jobs from "../components/jobs";
-import Stats from "../components/stats";
 import Image from "next/image";
 import Emissions from "../components/emissions.png";
 
