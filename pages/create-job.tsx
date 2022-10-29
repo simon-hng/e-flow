@@ -7,13 +7,16 @@ import Preview from "../components/preview";
 function CreateJob() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
+
   const [type, setType] = useState<string>();
   const [repeat, setRepeat] = useState<string>("no repeat");
+
   const [previewData, setPreviewData] = useState();
 
   useEffect(() => {
+    const requestParams = `start=${startDate.getTime()}&end=${endDate.getTime()}`;
     fetch(
-      "https://ye5nfxxk3l6fzvvlpcboyxmspi0mokin.lambda-url.eu-central-1.on.aws/"
+      `https://ye5nfxxk3l6fzvvlpcboyxmspi0mokin.lambda-url.eu-central-1.on.aws/?${requestParams}`
     )
       .then((res) => res.json())
       .then((data) => setPreviewData(data));
