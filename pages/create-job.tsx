@@ -15,10 +15,10 @@ function CreateJob() {
   const [previewData, setPreviewData] = useState();
 
   useEffect(() => {
-    const requestParams = `start=${startDate.getTime()}&end=${endDate.getTime()}`;
-    fetch(
-      `https://ye5nfxxk3l6fzvvlpcboyxmspi0mokin.lambda-url.eu-central-1.on.aws/?${requestParams}`
-    )
+    const baseAPI =
+      "https://rxuzg62wgkup2hkn6gvbmusdii0mzvgw.lambda-url.eu-central-1.on.aws/";
+    const requestParams = `?start=${startDate.getTime()}&end=${endDate.getTime()}`;
+    fetch(`${baseAPI}${requestParams}`)
       .then((res) => res.json())
       .then((data) => setPreviewData(data));
   }, [startDate, endDate]);
