@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import DatePicker from "react-datepicker";
@@ -9,11 +9,20 @@ function CreateJob() {
   const [endDate, setEndDate] = useState(new Date());
   const [type, setType] = useState<string>();
   const [repeat, setRepeat] = useState<string>("no repeat");
+  const [previewData, setPreviewData] = useState();
+
+  useEffect(() => {
+    fetch(
+      "https://ye5nfxxk3l6fzvvlpcboyxmspi0mokin.lambda-url.eu-central-1.on.aws/"
+    )
+      .then((res) => res.json())
+      .then((data) => setPreviewData(data));
+  }, [startDate, endDate]);
 
   return (
     <div className="flex flex-col px-4 lg:flex-row-reverse gap-4">
       <div className="w-full col-span-2 h-80 lg:w-2/4">
-        <Preview />
+        <Preview data={previewData} />
       </div>
 
       <div className="grid grid-cols-2 gap-2 w-full lg:w-2/4">
