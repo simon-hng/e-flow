@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         </div>
 
         <div className="space-x-4">
-          <Link href="/jobreport">Job Report</Link>
+          <Link href="/job-report">Job Report</Link>
           <Link href="/scheduled-jobs">Scheduled jobs</Link>
           <Link href="/create-job" className="btn rounded-full">
             new job
