@@ -11,14 +11,7 @@ import {
   Label,
 } from "recharts";
 
-const Preview = () => {
-  const [data ,setData] = useState();
-  useEffect(() => {
-    fetch("https://ye5nfxxk3l6fzvvlpcboyxmspi0mokin.lambda-url.eu-central-1.on.aws/")
-    .then(res => res.json())
-    .then(data => setData(data))
-    }, [])
-
+const Preview = ({data}) => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <ComposedChart
