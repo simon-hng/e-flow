@@ -33,7 +33,7 @@ export default function Home() {
               <Image
                 src={Emissions}
                 alt="Sources of US Greenhouse Gas Emissions in 2020"
-                text-align="center"
+                className="mx-auto"
               />
             </div>
           </div>
