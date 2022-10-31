@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BCG Platinion Hackathon project - Team E-flow frontend
+
+Project created during a [Hackathon in Amsterdam, 2022](https://hackathon.bcgplatinion.com/)
+The backend is also available on github here.
+
+We didn't win but people said that we had a pretty frontend :(
 
 ## Getting Started
 
