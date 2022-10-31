@@ -1,7 +1,7 @@
 # BCG Platinion Hackathon project - Team E-flow frontend
 
 Project created during a [Hackathon in Amsterdam, 2022](https://hackathon.bcgplatinion.com/)
-The backend is also available on github here.
+The backend is also available on github [here](https://github.com/benheckmann/e-flow-backend).
 
 We didn't win but people said that we had a pretty frontend :(
 
